@@ -2,6 +2,7 @@
 
 htmlTable example
 
+'''R
 install.packages("htmlTable")  # Only need to do once
 library(htmlTable)
 mytable = data.frame(matrix(1:4,nrow=2,ncol=2))
