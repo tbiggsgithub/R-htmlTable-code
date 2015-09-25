@@ -15,7 +15,7 @@ print(mytableout)
 To save this to a file, use the following in R:
 
 ```R
-outdir.tables = "C:\mydata\"
+outdir.tables = "C:/mydata/"  # Any directory
 setwd(outdir.tables)
 sink("mytable.html")
 print(mytableout,type="html",useViewer=FALSE)
