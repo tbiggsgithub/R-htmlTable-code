@@ -1,4 +1,10 @@
-# R-tips-and-tricks
+# R htmlTable code
+
+I encourage all my students to use R and htmlTable to generate the final tables and figures for their publications.
+Below find some simple code to introduce you to htmlTable.
+More help can be found at:
+https://cran.r-project.org/web/packages/htmlTable/index.html
+  See especially the "Vignettes"
 
 htmlTable example
 
