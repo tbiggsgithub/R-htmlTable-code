@@ -25,6 +25,6 @@ sink()
 Sometimes you want a specific number of significant digits.
 
 ```R
-table = matrix(rep(c(2,2.58495),times=2),nrow=2,ncol=2)
-table.txt = apply(table,2,function(x) as.character(format(x,digits=2)))
+mytable = matrix(rep(c(2,2.58495),times=2),nrow=2,ncol=2)
+mytable.txt = apply(mytable,2,function(x) as.character(format(x,digits=2)))
 ```
