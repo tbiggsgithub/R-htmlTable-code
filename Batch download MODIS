@@ -1,0 +1,19 @@
+MODIS data:  get txt file of downloads from http://reverb.echo.nasa.gov/reverb
+
+```R
+library(RCurl)
+library(rgdal)
+indir = "C:/Users/tbiggs/AppData/GMAO_downloads/" # Any directory
+url.list = "SSW_download_radiation_KB_2001_2003.inp" # Name of file from reverb 
+#  website above
+
+file.list = read.table(paste(indir,url.list,sep=""))
+food = unlist(file.list)
+
+for (j in 1:length(food)){
+	wgeturl = as.character(file.list[j,])
+	foo = strsplit(as.character(file.list[j,]),"/")[[1]][9]
+	dest.fname = strsplit(foo,"\\?")[[1]][1]
+	foo = download.file(wgeturl, destfile=paste(workd,dest.fname,sep=""), mode="wb", method='internal')
+}
+```R
