@@ -33,6 +33,8 @@ Sometimes you want a specific number of significant digits.
 ```R
 mytable = matrix(rep(c(2,2.58495),times=2),nrow=2,ncol=2)
 mytable.txt = apply(mytable,2,function(x) as.character(format(x,digits=2)))
+mytableout = htmlTable (mytable.txt)
+print(mytableout)
 ```
 
 To convert the html into a pdf, open the html in a web browser and print to pdf.
